@@ -2,7 +2,7 @@
 mp-border-snake-animation
 
 ### 兼容 微信小程序 的贪吃蛇边框动画
-[展示DEMO](http://cooperhu.com/mp-border-snake-animation/)
+[在线DEMO](http://cooperhu.com/mp-border-snake-animation/)
 
 ![img](https://github.com/huguobo/mp-border-snake-animation/blob/main/border-animation2.gif)
 
