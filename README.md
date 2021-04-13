@@ -7,11 +7,12 @@ mp-border-snake-animation
 ![img](https://github.com/huguobo/mp-border-snake-animation/blob/main/border-animation2.gif)
 
 ### 特性
-- 小程序
-- h5
+- 兼容小程序
+- 兼容 H5
 - 无需固定高宽
 - 贪吃蛇长度可以变化
 - 对于容器的宽高比没有要求
+- 速度可控
 
 
 
