@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mp-border-snake-animation</title>
+	<link href="./index.css" rel="stylesheet"></link>
+</head>
+<body>
+	<h2>1. 在小程序中也兼容的贪吃蛇线段动画(div 置换为 view 即可)</h2>
+	<h3>基础板</h3>
+	<div class="mp-wrapper">
+		<div class="mp-border-animation"></div>
+		<div class="mp-content">
+			内容区域
+		</div>
+	</div>
+	<h3>组合版，线段更长</h3>
+	<div class="mp-wrapper">
+		<div class="mp-border-animation"></div>
+		<div class="mp-border-animation-2"></div>
+		<div class="mp-content">
+			内容区域
+		</div>
+	</div>
+	<h3>实现原理</h3>
+	<div class="mp-wrapper">
+		<div class="mp-border-animation"></div>
+		<div class="mp-content opcity">
+			内容区域
+		</div>
+	</div>
+
+	<h2>2. 内部平分4个矩形后中心旋转射影</h2>
+	<h3>缺点：</h3>
+	<ul>
+		<li>当图形比例为扁长形的时候不适用</li>
+		<li>小程序真机上有渲染问题</li>
+		<li>线段头尾部可能是尖的</li>
+	</ul>
+	<div class="rotate-animation">
+	</div>
+
+	<h2>2. 使用 Css 的 clip 属性</h2>
+	<h3>缺点：</h3>
+	<ul>
+		<li>有兼容性问题，尤其在小程序复杂的环境中</li>
+		<li>keyframes 中 rect 中的数值需要指定绝对大小，如果被环绕的元素大小是可变的，实现的复杂度较高</li>
+	</ul>
+	<div class="clip-animation">
+		<div class="clip-content"></div>
+	</div>
+</body>
+</html>
